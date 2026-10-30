@@ -1,0 +1,43 @@
+# 字节编译产物 / Bytecode artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 分发与打包 / Distribution & packaging
+build/
+dist/
+sdist/
+wheels/
+*.egg-info/
+*.egg
+.eggs/
+MANIFEST
+
+# 测试与覆盖率 / Testing & coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+
+# 虚拟环境 / Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# 编辑器与系统 / Editors & OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# 本地输出物 / Local artifacts
+output/
+tmp/
+*.log
+_report.*

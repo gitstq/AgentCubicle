@@ -1,0 +1,4 @@
+"""类型标注标记文件（PEP 561）。
+
+Marker file enabling type hints (PEP 561).
+"""

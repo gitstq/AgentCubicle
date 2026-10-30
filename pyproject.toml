@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentcubicle"
+version = "1.0.0"
+description = "Zero-dependency isolated workspaces, pre-action authorization and tamper-evident audit for AI agents"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "gitstq" }]
+keywords = [
+    "agent",
+    "sandbox",
+    "audit",
+    "policy",
+    "security",
+    "ai",
+    "llm",
+    "cli",
+    "zero-dependency",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Systems Administration",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/gitstq/AgentCubicle"
+Repository = "https://github.com/gitstq/AgentCubicle"
+Issues = "https://github.com/gitstq/AgentCubicle/issues"
+
+[project.scripts]
+cubicle = "agentcubicle.cli:main"
+
+[tool.setuptools]
+packages = ["agentcubicle"]
+
+[tool.setuptools.package-data]
+agentcubicle = ["py.typed"]
